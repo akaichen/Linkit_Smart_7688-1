@@ -38,7 +38,6 @@ void loop()
     float h = dht.readHumidity();
     float t = dht.readTemperature();
 
-    // check if returns are valid, if they are NaN (not a number) then something went wrong!
     if (t >= 25) 
     {
         digitalWrite(ledPin, 1);
