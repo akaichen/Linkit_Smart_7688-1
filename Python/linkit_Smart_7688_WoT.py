@@ -41,7 +41,8 @@ from bridgeclient import BridgeClient as bridgeclient
 value = bridgeclient()
 
 websocket.enableTrace(True)
-ws = websocket.create_connection("ws://wot.city/object/57615d8a54242e1f2a000ee5/send")
+#ws = websocket.create_connection("ws://wot.city/object/57615d8a54242e1f2a000ee5/send")
+ws = websocket.create_connection("ws://140.92.26.43/object/57615d8a54242e1f2a000ee5/send")
 
 while True:
 	d0 = value.get("d")

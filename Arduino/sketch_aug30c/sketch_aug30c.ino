@@ -1,9 +1,20 @@
 #include <Bridge.h>
 
+// OLED
+#include <Wire.h>  //載入I2C函式庫
+#include <SeeedOLED.h> //載入SeeedOLED函式庫
+
+// DHT
 #include "DHT.h"
 #define DHTPIN A0
 #define DHTTYPE DHT11 
 DHT dht(DHTPIN, DHTTYPE);
+
+// Temperature
+int h;
+float temperature;
+int B=3975;                  //B value of the thermistor
+float resistance;
 
 // LED
 int ledPin = 5; 
@@ -30,6 +41,16 @@ void setup()
     // Dust Sensor
     pinMode(dustPin, INPUT);
     starttime = millis();//get the current time;
+
+    // OLED
+    Wire.begin();
+    SeeedOled.init();  
+    SeeedOled.clearDisplay();  //清除螢幕
+    SeeedOled.setNormalDisplay(); //設定螢幕為正常模式(非反白)
+    SeeedOled.setPageMode();  //設定尋址模式頁模式
+    SeeedOled.setTextXY(0,0); //設定啟始坐標
+    SeeedOled.putString("Temp&Humi&Dust"); 
+
 }
 
 void loop() 
@@ -37,8 +58,12 @@ void loop()
     
     float h = dht.readHumidity();
     float t = dht.readTemperature();
+    int moistureValue = analogRead(1);
+    h = analogRead(A2);
+    resistance=(float)(1023-h)*10000/h;                       // get the resistance of the sensor;
+    temperature=1/(log(resistance/10000)/B+1/298.15)-273.15;  // convert to temperature via
 
-    if (t >= 25) 
+    if (t > 25) 
     {
         digitalWrite(ledPin, 1);
     } 
@@ -73,13 +98,40 @@ void loop()
         Serial.print(concentration);
         Serial.print(" pcs/0.01cf");
         Serial.print(" \t");
-        Serial.print("Humidity: "); 
+        Serial.print("DHT-Humidity: "); 
         Serial.print(h);
         Serial.print(" %\t");
-        Serial.print("Temperature: "); 
+        Serial.print("DHT-Temperature: "); 
         Serial.print(t);
-        Serial.println(" *C");
+        Serial.print(" *C\t");
+        Serial.print("Moisture: "); 
+        Serial.print(moistureValue);
+        Serial.print(" \t");
+        Serial.print("Temperature: "); 
+        Serial.println(temperature);
 
+        // OLED
+        SeeedOled.setTextXY(1,0); //設定啟始坐標
+        SeeedOled.putString("Dust: "); 
+        SeeedOled.putNumber(concentration); 
+        SeeedOled.setTextXY(2,0); //設定啟始坐標
+        SeeedOled.putString("Temp: "); 
+        SeeedOled.putNumber(t); 
+        SeeedOled.putString(" *C"); 
+        SeeedOled.setTextXY(3,0); //設定啟始坐標
+        SeeedOled.putString("Humidity: "); 
+        SeeedOled.putNumber(h); 
+        SeeedOled.putString(" %"); 
+        SeeedOled.setTextXY(4,0); //設定啟始坐標
+        SeeedOled.putString("Moisture: "); 
+        SeeedOled.putNumber(moistureValue);
+        SeeedOled.putString(" %");
+        SeeedOled.setTextXY(5,0); //設定啟始坐標
+        SeeedOled.putString("Temp: "); 
+        SeeedOled.putNumber(temperature);
+        SeeedOled.putString(" *C");
+               
+        // Bridge
         Bridge.put("d", String(concentration));
         Bridge.put("h", String(h));
         Bridge.put("t", String(t));
