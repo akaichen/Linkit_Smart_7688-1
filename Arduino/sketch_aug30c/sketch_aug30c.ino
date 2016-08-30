@@ -7,9 +7,6 @@ DHT dht(DHTPIN, DHTTYPE);
 // LED
 int ledPin = 5; 
 
-// Touch Sensor
-int TouchPin = 6;
-
 // Dust Sensor
 int dustPin = 8; 
 unsigned long duration;
@@ -31,9 +28,6 @@ void setup()
     //digitalWrite(ledPin, 1);
     //digitalWrite(ledPin, 0);
 
-    // Touch Sensor
-    pinMode(TouchPin, INPUT);
-
     // Dust Sensor
     pinMode(dustPin, INPUT);
     starttime = millis();//get the current time;
@@ -41,19 +35,19 @@ void setup()
 
 void loop() 
 {
-    //int sensorValue = digitalRead(TouchPin);
-    //if(sensorValue==1)
-    //{
-      //Serial.print(" touch sensor pressed ");
-    //}else{
-      //Serial.print(" touch sensor do not touch ");
-    //}
-    //Serial.print("\n");
     
-    // Reading temperature or humidity takes about 250 milliseconds!
-    // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
     float h = dht.readHumidity();
     float t = dht.readTemperature();
+
+    // check if returns are valid, if they are NaN (not a number) then something went wrong!
+    if (t >= 25) 
+    {
+        digitalWrite(ledPin, 1);
+    } 
+    else 
+    {
+        digitalWrite(ledPin, 0);
+    }
 
     // check if returns are valid, if they are NaN (not a number) then something went wrong!
     if (isnan(t) || isnan(h)) 
