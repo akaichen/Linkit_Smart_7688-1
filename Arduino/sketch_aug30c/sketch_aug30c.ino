@@ -1,7 +1,8 @@
 #include <Bridge.h>
+
 #include "DHT.h"
-#define DHTPIN A0     // what pin we're connected to
-#define DHTTYPE DHT11   // DHT 11 
+#define DHTPIN A0
+#define DHTTYPE DHT11 
 DHT dht(DHTPIN, DHTTYPE);
 
 // LED
@@ -25,8 +26,6 @@ void setup()
 
     // LED
     pinMode(ledPin, OUTPUT);
-    //digitalWrite(ledPin, 1);
-    //digitalWrite(ledPin, 0);
 
     // Dust Sensor
     pinMode(dustPin, INPUT);
