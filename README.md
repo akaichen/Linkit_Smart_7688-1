@@ -28,3 +28,7 @@
 3. [LASS](http://lass-net.org/)
 4. [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
 5. [Linux 鳥哥](http://linux.vbird.org/)
+
+## License
+
+MIT
