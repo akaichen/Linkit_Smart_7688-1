@@ -12,6 +12,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 // Temperature
 int h;
+int h1;
 float temperature;
 int B=3975;                  //B value of the thermistor
 float resistance;
@@ -59,8 +60,8 @@ void loop()
     float h = dht.readHumidity();
     float t = dht.readTemperature();
     int moistureValue = analogRead(1);
-    h = analogRead(A2);
-    resistance=(float)(1023-h)*10000/h;                       // get the resistance of the sensor;
+    h1 = analogRead(A2);
+    resistance=(float)(1023-h)*10000/h1;                       // get the resistance of the sensor;
     temperature=1/(log(resistance/10000)/B+1/298.15)-273.15;  // convert to temperature via
 
     if (t > 25) 

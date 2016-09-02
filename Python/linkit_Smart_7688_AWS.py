@@ -2,7 +2,7 @@
 # Version:     2016.06.30 
 # Author:      Archer Huang
 # License:     MIT
-# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + WoT
+# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + AWS
 # **************************************************************************************************************************
 # 
 # 1. update opkg & install wget & disable bridge
@@ -25,37 +25,64 @@
 #	 tar zxvf websocket_client-0.32.0.tar.gz
 #	 cd websocket_client-0.32.0
 #	 python setup.py install
-# 
-# Dashboard
-# 	http://52.42.77.220/dashboard2/index.html#57615d8a54242e1f2a000ee5
+#
 # **************************************************************************************************************************
 
 import time
 import sys  
 import websocket
+import socket
 import datetime
+import paho.mqtt.client as paho
+import ssl
+import os
+import json
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge/') 
 from bridgeclient import BridgeClient as bridgeclient
 
 value = bridgeclient()
 
-websocket.enableTrace(True)
-ws = websocket.create_connection("ws://wot.city/object/57615d8a54242e1f2a000ee5/send")
+connflag = False
+
+def on_connect(client, userdata, flags, rc):
+    global connflag
+    connflag = True
+    print("Connection returned result: " + str(rc) )
+
+def on_message(client, userdata, msg):
+    print(msg.topic+" "+str(msg.payload))
+
+#def on_log(client, userdata, level, buf):
+#    print(msg.topic+" "+str(msg.payload))
+
+mqttc = paho.Client()
+mqttc.on_connect = on_connect
+mqttc.on_message = on_message
+#mqttc.on_log = on_log
+
+awshost = "a2h61tdmtpgw89.iot.ap-southeast-1.amazonaws.com"
+awsport = 8883
+clientId = "Edison"
+thingName = "Edison"
+caPath = "./root-CA.crt"
+certPath = "./76cb8e72f9-certificate.pem.crt"
+keyPath = "./76cb8e72f9-private.pem.key"
+
+mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)
+
+mqttc.connect(awshost, awsport, keepalive=60)
+
+mqttc.loop_start()
 
 while True:
-	d0 = value.get("d")
-	h0 = value.get("h")
-	t0 = value.get("t")
-	print "Dust: " + d0
-	print "Humi: " + h0
-	print "Temp: " + t0
-	
+	celsius = value.get("h")
+	print "%d degrees Celsius" % float(celsius)
 	t = time.time();
 	date = datetime.datetime.fromtimestamp(t).strftime('%Y%m%d%H%M%S')
+	if connflag == True:
+		mqttc.publish("temperature", json.dumps({"time": date, "temperature": celsius}), qos=1)
+	else:
+		print("waiting for connection...")
+	time.sleep(1)
 	
-	vals = "{\"date\":\""+date+"\",\"temperature\":"+t0+",\"h\":"+h0+",\"soil\":"+d0+"}"
-	
-	time.sleep(1);
-	ws.send(vals);
-	print vals;

@@ -2,7 +2,7 @@
 # Version:     2016.06.30 
 # Author:      Archer Huang
 # License:     MIT
-# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + Websocket Python + WoT
+# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + Thingspeak
 # **************************************************************************************************************************
 # 
 # 1. update opkg & install wget & disable bridge
@@ -31,8 +31,6 @@ sys.path.insert(0, '/usr/lib/python2.7/bridge/')
 from bridgeclient import BridgeClient as bridgeclient
 
 value = bridgeclient()
-
-connflag = False
 
 # **************************************************************************************************************************
 # Ref: https://www.mathworks.com/help/thingspeak/update-channel-feed.html

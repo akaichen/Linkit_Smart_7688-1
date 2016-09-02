@@ -1,9 +1,9 @@
-# **************************************************************************************************************************
+# *********************************************************************
 # Version:     2016.06.30 
 # Author:      Archer Huang
 # License:     MIT
-# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + Websocket Python + WoT
-# **************************************************************************************************************************
+# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + LASS
+# *********************************************************************
 # 
 # 1. update opkg & install wget & disable bridge
 # 	 opkg update
@@ -15,7 +15,7 @@
 #	 pip install paho-mqtt
 #    pip install httplib2
 #
-# **************************************************************************************************************************
+# *********************************************************************
 
 import time
 import sys  
@@ -29,33 +29,21 @@ import httplib, urllib
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge/') 
 from bridgeclient import BridgeClient as bridgeclient
-
 value = bridgeclient()
 
-connflag = False
 
-# **************************************************************************************************************************
-# Ref: https://www.mathworks.com/help/thingspeak/update-channel-feed.html
-#
-# POST https://api.thingspeak.com/update.json
-# api_key = R4P5W2047WSYO8S8
-# field1 = 19
-# **************************************************************************************************************************
-
-ApiKey = "R4P5W2047WSYO8S8"
-
-################################################################
-# Please configure the following settings for your environment
+# *********************************************************************
+# MQTT Config
 
 MQTT_SERVER = "gpssensor.ddns.net"
 MQTT_PORT = 1883
 MQTT_ALIVE = 60
-MQTT_TOPIC = "LASS/Test/PM25"
-#MQTT_TOPIC = "DeveloperTest"
+#MQTT_TOPIC = "LASS/Test/PM25"
+MQTT_TOPIC = "DeveloperTest"
 #MQTT_TOPIC = "LASS/Test/#"
 
-################################################################
-
+# *********************************************************************
+# Data Format
 # http://nrl.iis.sinica.edu.tw/LASS/show.php?device_id=Temperature_1024
 
 ver_format=3
@@ -74,49 +62,25 @@ gps_lat=25.0336762
 gps_lon=121.5404092
 
 #msg example
-
-
-packstr = "PPP25|ver_format=%i|fmt_opt=%i|app=%s|ver_app=%s|device_id=%s|device=%s" % (ver_format,fmt_opt,app,ver_app,device_id,device)
+packstr = "|ver_format=%i|fmt_opt=%i|app=%s|ver_app=%s|device_id=%s|device=%s" % (ver_format,fmt_opt,app,ver_app,device_id,device)
 packstr_fix = "|tick=%i|date=%s|time=%s|gps_fix=%i|gps_num=%i|gps_alt=%i|gps_lat=%f|gps_lon=%f" % (tick,datestr,timestr,gps_fix,gps_num,gps_alt,gps_lat,gps_lon)
 print "%s%s" %(packstr,packstr_fix)
 
-connflag = False
-
-# The callback for when the client receives a CONNACK response from the server.
-def on_connect(client, userdata, flags, rc):
-    print("MQTT Connected with result code "+str(rc))
-    global connflag
-    connflag = True
-    print("Connection returned result: " + str(rc) )
-    client.subscribe(MQTT_TOPIC)
-
-# The callback for when a PUBLISH message is received from the server.
-def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload))
+# *********************************************************************
 
 mqtt_client = mqtt.Client()
-mqtt_client.on_connect = on_connect
-mqtt_client.on_message = on_message
-
-mqtt_client.connect(MQTT_SERVER, MQTT_PORT, MQTT_ALIVE)
-mqtt_client.loop_start()	
+mqtt_client.connect(MQTT_SERVER, MQTT_PORT, MQTT_ALIVE)	
 
 while True:
     d0 = value.get("d")
     h0 = value.get("h")
     t0 = value.get("t")
-    print "Dust: " + d0
-    print "Humi: " + h0
-    print "Temp: " + t0
 
-    packstr_sensor="|s-t0==%s|s-h0=%s|s-d0=%s" %(t0,h0,d0)
+    packstr_sensor="|s_t0=%s|s_h0=%s|s_d0=%s" %(t0,h0,d0)
     payload = packstr + packstr_fix + packstr_sensor
 
     print "send payload: " + payload
+    print "packstr_sensor: " + packstr_sensor
 
-    if connflag == True:
-        print "packstr_sensor: " + packstr_sensor
-        mqtt_client.publish(MQTT_TOPIC, payload, qos=1)
-    else:
-        print("waiting for connection...")
+    mqtt_client.publish(MQTT_TOPIC, payload, qos=1)
     time.sleep(1)
