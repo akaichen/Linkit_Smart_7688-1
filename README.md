@@ -21,6 +21,7 @@
 3. [ThingSpeak](https://thingspeak.com/)
 4. [ThinkSpeak Data Visualization](nrl.iis.sinica.edu.tw/LASS/PM25.php?site=III&city=台北市&district=信義區&channel=152239&apikey=9ND1FVDPKLQGPDRI)
 
-## Ref
+## Reference
 1. [LASS](http://lass-net.org/)
 2. [MediaTek LinkIt™ Smart 7688](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp)
+3. 
