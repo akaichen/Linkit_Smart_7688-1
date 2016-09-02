@@ -37,6 +37,9 @@
 4. [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
 5. [Linux 鳥哥](http://linux.vbird.org/)
 
+## Firmware
+1. [Linkit Smart 7688 Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
+
 ## License
 
 MIT
