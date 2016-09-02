@@ -7,7 +7,7 @@
 
 1. LinkIt Smart 7688 Duo
 2. Arduino Breakout for LinkIt Smart 7688 Duo
-3. Grove - Temperature&Humidity Sensor
+3. Grove - Temperature & Humidity Sensor
 4. Grove - Dust Sensor
 5. Grove - OLED Display 1.12"
 
