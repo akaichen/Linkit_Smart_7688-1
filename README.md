@@ -24,4 +24,4 @@
 ## Reference
 1. [LASS](http://lass-net.org/)
 2. [MediaTek LinkIt™ Smart 7688](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp)
-3. 
+3. [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
