@@ -8,3 +8,4 @@
 ## Service
 
 1. [WoT.City](https://wotcity.com/)
+2. [AWS](https://aws.amazon.com/tw/)
