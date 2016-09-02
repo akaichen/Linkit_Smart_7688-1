@@ -39,6 +39,11 @@
 ## Firmware
 1. [Linkit Smart 7688 Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
 
+## Tools
+** Windows
+1. [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+2. [FileZilla](https://filezilla-project.org/)
+
 ## License
 
 MIT
