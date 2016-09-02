@@ -33,7 +33,7 @@
 
 1. [MediaTek LinkIt™ Smart 7688](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp)
 2. [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html)
-3. [LASS](http://lass-net.org/)
+3. [LASS （Location Aware Sensing System）](http://lass-net.org/)
 4. [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
 5. [Linux 鳥哥](http://linux.vbird.org/)
 
