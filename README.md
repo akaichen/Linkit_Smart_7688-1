@@ -42,7 +42,7 @@
 ## Tools
 *Windows*
 1. [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-2. [FileZilla](https://filezilla-project.org/)
+2. [FileZilla Client](https://filezilla-project.org/)
 
 ## License
 
