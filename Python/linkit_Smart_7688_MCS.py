@@ -1,3 +1,21 @@
+# *********************************************************************
+# Version:     2016.09.06
+# Author:      Archer Huang
+# License:     MIT
+# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + MCS
+# *********************************************************************
+# 
+# 1. update opkg & install wget & disable bridge
+#    opkg update
+#    opkg install wget
+#    uci set yunbridge.config.disabled=0
+#    uci commit
+#
+# 2. install mqtt
+#    pip install paho-mqtt
+#
+# *********************************************************************
+
 import time
 import sys  
 import httplib, urllib
