@@ -38,7 +38,6 @@
 3. [LASS （Location Aware Sensing System）](http://lass-net.org/)
 4. [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
 5. [LASS - How to get data log from server](https://lass.hackpad.com/How-to-get-data-log-from-server-Ztu9mpUsGL9)
-6. [鳥哥的Linux 私房菜](http://linux.vbird.org/)
 
 ## Firmware
 1. [Linkit Smart 7688 Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
