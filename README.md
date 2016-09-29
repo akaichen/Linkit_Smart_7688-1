@@ -1,7 +1,7 @@
 # IoT Cloud
 
 ## 
-![Imgur](http://i.imgur.com/0MaLvd7.png)
+![Imgur](http://i.imgur.com/kgAzeou.png)
 
 ## Board and Sensor
 
