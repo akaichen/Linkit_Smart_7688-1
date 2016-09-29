@@ -42,7 +42,7 @@
 ## Firmware
  * Linkit Smart 7688
    *  [Linkit Smart 7688 Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
- * Intel® IoT Developer Kit
+ * Intel® Edison IoT Developer Kit
    *  [Installers](https://software.intel.com/en-us/iot/hardware/edison/downloads)
 
 ## Tools
