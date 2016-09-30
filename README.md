@@ -5,11 +5,11 @@
 
 ## Board and Sensor
 
-1. LinkIt Smart 7688 Duo / Intel® Edison for Arduino
-2. Arduino Breakout for LinkIt Smart 7688 Duo
-3. Grove - Temperature & Humidity Sensor
-4. Grove - Dust Sensor
-5. Grove - OLED Display 1.12"
+* LinkIt Smart 7688 Duo / Intel® Edison for Arduino
+* Arduino Breakout for LinkIt Smart 7688 Duo
+* Grove - Temperature & Humidity Sensor
+* Grove - Dust Sensor
+* Grove - OLED Display 1.12"
 
 ## IDE
 
