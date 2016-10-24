@@ -63,8 +63,8 @@ mqttc.on_message = on_message
 
 awshost = "a2h61tdmtpgw89.iot.ap-southeast-1.amazonaws.com"
 awsport = 8883
-clientId = "Edison"
-thingName = "Edison"
+clientId = "sensorData"
+thingName = "sensorData"
 caPath = "./root-CA.crt"
 certPath = "./76cb8e72f9-certificate.pem.crt"
 keyPath = "./76cb8e72f9-private.pem.key"
