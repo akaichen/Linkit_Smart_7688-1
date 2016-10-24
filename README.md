@@ -27,7 +27,7 @@
 ## Service
 
 * [WoT.City](https://wotcity.com/)
-* [AWS](https://aws.amazon.com/tw/)
+* [Amazon Web Services Cloud](https://aws.amazon.com/tw/)
 * [ThingSpeak](https://thingspeak.com/)
 * [ThinkSpeak Data Visualization](nrl.iis.sinica.edu.tw/LASS/PM25.php?site=III&city=台北市&district=信義區&channel=152239&apikey=9ND1FVDPKLQGPDRI)
 * [MediaTek Cloud Sandbox](https://mcs.mediatek.com)
