@@ -35,7 +35,6 @@
 ## Reference
 
 * [MediaTek LinkIt™ Smart 7688](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp)
-* [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html)
 * [LASS （Location Aware Sensing System）](http://lass-net.org/)
 * [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
 * [LASS - How to get data log from server](https://lass.hackpad.com/How-to-get-data-log-from-server-Ztu9mpUsGL9)
