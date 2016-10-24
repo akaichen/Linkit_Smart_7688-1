@@ -5,7 +5,7 @@
 
 ## Board and Sensor
 
-* LinkIt Smart 7688 Duo
+* [LinkIt Smart 7688 Duo](https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html)
 * Arduino Breakout for LinkIt Smart 7688 Duo
 * Grove - Temperature & Humidity Sensor
 * Grove - Dust Sensor
