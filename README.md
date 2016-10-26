@@ -3,8 +3,6 @@
 ## 
 ![Imgur](http://i.imgur.com/CD5jz6X.png)
 
-![Imgur](http://i.imgur.com/UZgJ77X.png)
-
 | 通訊協定 | 網路服務提供商 |
 |---|---|
 | HTTP | ThingSpeak、MediaTek Cloud Sandbox (MCS)、Google Firebase |
