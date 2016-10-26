@@ -5,6 +5,12 @@
 
 ![Imgur](http://i.imgur.com/UZgJ77X.png)
 
+| 通訊協定 | 網路服務提供商 |
+|---|---|
+| HTTP | ThingSpeak、MediaTek Cloud Sandbox (MCS)、Google Firebase |
+| MQTT | LASS、MediaTek Cloud Sandbox (MCS)、AWS IoT、IBM Bluemix IoT Platform |
+| WebSocket | WoT.City |
+
 ## Board and Sensor
 
 * [LinkIt Smart 7688 Duo](https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html)
