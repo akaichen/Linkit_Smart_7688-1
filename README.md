@@ -2,7 +2,7 @@
 
 ## 
 
-* 物聯網基礎架構與應用
+* 物聯網架構與應用
 
 ![Imgur](http://i.imgur.com/CD5jz6X.png)
 
