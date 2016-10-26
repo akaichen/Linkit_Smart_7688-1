@@ -1,7 +1,7 @@
 # Linkit Smart 7688 IoT Cloud
  
 ## 
-![Imgur](http://i.imgur.com/TXO8aC6.png)
+![Imgur](http://i.imgur.com/CD5jz6X.png)
 
 ## Board and Sensor
 
