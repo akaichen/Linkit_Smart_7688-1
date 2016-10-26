@@ -3,6 +3,8 @@
 ## 
 ![Imgur](http://i.imgur.com/CD5jz6X.png)
 
+![Imgur](http://i.imgur.com/UZgJ77X.png)
+
 ## Board and Sensor
 
 * [LinkIt Smart 7688 Duo](https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html)
