@@ -58,7 +58,7 @@
 
 ## 【 Firmware and Software 】
  * Linkit Smart 7688
-   *  [Linkit Smart 7688 Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
+   *  [Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
 
 ## 【 Tools 】
  * Windows
