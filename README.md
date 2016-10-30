@@ -76,6 +76,7 @@
 
 ## 【 Blog 】
 * [Archer @ 部落格](https://github.com/ArcherHuang/MyBlog/blob/master/README.md)
+* <a href="https://github.com/ArcherHuang/MyBlog/blob/master/README.md" target="_blank">Archer @ 部落格</a>
 
 ## 【 License 】
 
