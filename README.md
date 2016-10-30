@@ -1,4 +1,4 @@
-# Linkit Smart 7688 IoT Cloud
+# Programs running on LinkIt Smart 7688 Duo that connects to IoT Platform
   
 ## 
   
