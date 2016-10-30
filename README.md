@@ -66,7 +66,7 @@
    *  傳送檔案 - [FileZilla Client](https://filezilla-project.org/)
       * opkg update
       * opkg install openssh-sftp-server
- * Mac
+ * macOS
    *  登入 / 傳送檔案 - 終端機
 
 ## 【 Blog 】
