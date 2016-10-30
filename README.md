@@ -60,8 +60,8 @@
 
 ## Tools
  * Windows
-   *  [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-   *  [FileZilla Client](https://filezilla-project.org/)
+   *  登入 - [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+   *  傳送檔案 - [FileZilla Client](https://filezilla-project.org/)
 
 ## Blog
 * https://github.com/ArcherHuang/MyBlog/blob/master/README.md
