@@ -62,6 +62,8 @@
  * Windows
    *  登入 - [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
    *  傳送檔案 - [FileZilla Client](https://filezilla-project.org/)
+ * Mac
+   *  登入 / 傳送檔案 - 終端機
 
 ## Blog
 * https://github.com/ArcherHuang/MyBlog/blob/master/README.md
