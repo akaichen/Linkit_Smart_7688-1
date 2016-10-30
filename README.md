@@ -65,7 +65,7 @@
    *  登入 - [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
    *  傳送檔案 - [FileZilla Client](https://filezilla-project.org/)
       * opkg update
-           *opkg install openssh-sftp-server
+           * opkg install openssh-sftp-server
            
  * macOS
    *  登入 / 傳送檔案 - 終端機
