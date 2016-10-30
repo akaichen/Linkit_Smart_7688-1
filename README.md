@@ -22,9 +22,6 @@
 * [Grove - Dust Sensor](https://www.seeedstudio.com/Grove-Dust-Sensor-p-1050.html)
 * [Grove - OLED Display 1.12"](https://www.seeedstudio.com/Grove-OLED-Display-1.12%22-p-824.html)
 
-## Programming Language
- * Python & 
-
 ## Integrated Development Environment (IDE) 
 
  * Python
