@@ -67,8 +67,8 @@
       * Windows 端
         [FileZilla Client](https://filezilla-project.org/)
       * Linkit Smart 7688 端
-        > opkg update
-        > opkg install openssh-sftp-server    
+        ```opkg update```
+        ```opkg install openssh-sftp-server```    
  
  * macOS
    *  登入 / 傳送檔案 - 終端機
