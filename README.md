@@ -62,7 +62,9 @@
 
 ## 【 Tools 】
  * Windows
-   *  登入 - [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+   *  登入
+      * Windows 端
+        * [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
    *  傳送檔案 
       * Windows 端
         * [FileZilla Client](https://filezilla-project.org/)
