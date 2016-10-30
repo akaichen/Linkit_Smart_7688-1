@@ -32,12 +32,12 @@
  * Arduino
    *  [Arduino IDE v1.6.5](https://www.arduino.cc/en/Main/OldSoftwareReleases)
 
-## Library
+## 【 Library 】
 
 * [Seeed OLED Display 128*64 library](https://github.com/Seeed-Studio/OLED_Display_128X64)
 * DHT
 
-## Service
+## 【 Service 】
 
 * [WoT.City](https://wotcity.com/)
 * [Amazon Web Services Cloud](https://aws.amazon.com/tw/)
@@ -47,7 +47,7 @@
 * [ThingSpeak](https://thingspeak.com/)
 * [ThinkSpeak Data Visualization](nrl.iis.sinica.edu.tw/LASS/PM25.php?site=III&city=台北市&district=信義區&channel=152239&apikey=9ND1FVDPKLQGPDRI)
 
-## Reference
+## 【 Reference 】
 
 * [MediaTek LinkIt™ Smart 7688](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp)
 * [MediaTek LinkIt™ Smart 7688 Developer's Guide](http://labs.mediatek.com/fileMedia/download/87c801b5-d1e6-4227-9a29-b5421f2955ac)
@@ -56,21 +56,21 @@
 * [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
 * [LASS - How to get data log from server](https://lass.hackpad.com/How-to-get-data-log-from-server-Ztu9mpUsGL9)
 
-## Firmware And Software 
+## 【 Firmware and Software 】
  * Linkit Smart 7688
    *  [Linkit Smart 7688 Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
 
-## Tools
+## 【 Tools 】
  * Windows
    *  登入 - [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
    *  傳送檔案 - [FileZilla Client](https://filezilla-project.org/)
  * Mac
    *  登入 / 傳送檔案 - 終端機
 
-## Blog
+## 【 Blog 】
 * https://github.com/ArcherHuang/MyBlog/blob/master/README.md
 
-## License
+## 【 License 】
 
 The MIT License (MIT)
 
