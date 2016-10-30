@@ -73,6 +73,8 @@
         * ```opkg install openssh-sftp-server```   
  * macOS
    *  登入 / 傳送檔案 - 終端機
+      * 登入 ```ssh root@IP```
+      * 傳送檔案 ```scp 在電腦中的檔案位置 root@IP:要傳送到 Linkit Smart 7688 中的位置```
 
 ## 【 Blog 】
 * [Archer @ 部落格](https://github.com/ArcherHuang/MyBlog/blob/master/README.md)
