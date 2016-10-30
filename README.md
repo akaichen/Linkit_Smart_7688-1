@@ -75,7 +75,7 @@
    *  登入 / 傳送檔案 - 終端機
 
 ## 【 Blog 】
-* [Archer @ 部落格](https://github.com/ArcherHuang/MyBlog/blob/master/README.md)
+* [Archer@部落格](https://github.com/ArcherHuang/MyBlog/blob/master/README.md)
 
 ## 【 License 】
 
