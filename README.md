@@ -61,7 +61,7 @@
    *  [Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
 
 ## 【 Tools 】
- * Windows
+ * Windows 作業系統
    *  登入
       * Windows 端
         * [Putty](https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
@@ -71,7 +71,7 @@
       * Linkit Smart 7688 端
         * ```opkg update```
         * ```opkg install openssh-sftp-server```   
- * macOS
+ * macOS 作業系統
    *  登入 / 傳送檔案 - 終端機
       * 登入 ➙ ```ssh root@IP```
       * 傳送檔案 ➙ ```scp 在電腦中的檔案位置 root@IP:要傳送到 Linkit Smart 7688 中的位置```
