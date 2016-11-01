@@ -77,6 +77,7 @@
       * 傳送檔案（在本地端電腦的終端機執行） ➙ ```scp 在電腦中的檔案位置 root@IP:要傳送到 Linkit Smart 7688 中的位置```
  * 如果在瀏覽器輸入所設定的 local domain 後無法顯示設定頁時
    *  安裝 [Bonjour Print Services](https://support.apple.com/kb/dl999?locale=zh_TW)
+   
 ## 【 Blog 】
 * [Archer @ 部落格](https://github.com/ArcherHuang/MyBlog/blob/master/README.md)
 
