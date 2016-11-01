@@ -78,7 +78,7 @@
  * Troubleshooting 
    * 如果在瀏覽器輸入所設定的 local domain ( 預設為 ```http://mylinkit.local``` ) 後無法顯示設定頁時
       *  請安裝 [Bonjour Print Services](https://support.apple.com/kb/dl999?locale=zh_TW)
-   * 當登入時發生 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! 錯誤
+   * 當登入時發生 ```WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!``` 錯誤
       * 於終端機輸入 ```ssh-keygen -R IP位置 ```
       * 再重新 Login
    
