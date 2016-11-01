@@ -75,8 +75,12 @@
    *  登入 / 傳送檔案（本地端到 Linkit Smart 7688 端）- 終端機
       * 登入（在本地端電腦的終端機執行） ➙ ```ssh root@IP```
       * 傳送檔案（在本地端電腦的終端機執行） ➙ ```scp 在電腦中的檔案位置 root@IP:要傳送到 Linkit Smart 7688 中的位置```
- * 如果在瀏覽器輸入所設定的 local domain 後無法顯示設定頁時
-   *  請安裝 [Bonjour Print Services](https://support.apple.com/kb/dl999?locale=zh_TW)
+ * Troubleshooting 
+   * 如果在瀏覽器輸入所設定的 local domain 後無法顯示設定頁時
+      *  請安裝 [Bonjour Print Services](https://support.apple.com/kb/dl999?locale=zh_TW)
+   * 當登入時發生 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! 錯誤
+      * 於終端機輸入 ```ssh-keygen -R IP位置 ```
+      * 再重新 Login
    
 ## 【 Blog 】
 * [Archer @ 部落格](https://github.com/ArcherHuang/MyBlog/blob/master/README.md)
