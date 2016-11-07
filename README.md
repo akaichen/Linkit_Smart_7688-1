@@ -4,7 +4,7 @@
         
 * 物聯網架構與應用
  
-![Imgur](http://i.imgur.com/CD5jz6X.png)
+![Imgur](http://i.imgur.com/wXvCki9.png)
 
 * 通訊協定與網路服務提供商
 
