@@ -15,7 +15,7 @@
 | WebSocket | WoT.City |
 
 * 實作架構
-![Imgur](http://i.imgur.com/gOdUgVp.png)
+![Imgur](http://i.imgur.com/WFNcC1p.png)
 
 ## 【 Board and Sensor 】
 
