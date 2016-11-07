@@ -14,6 +14,9 @@
 | MQTT | LASS、MediaTek Cloud Sandbox (MCS)、AWS IoT、IBM Bluemix IoT Platform |
 | WebSocket | WoT.City |
 
+* 實作架構
+![Imgur](http://i.imgur.com/WTcEz3U.png)
+
 ## 【 Board and Sensor 】
 
 * [LinkIt Smart 7688 Duo](https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html)
