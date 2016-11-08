@@ -89,7 +89,7 @@
 * [LASS - Data specification](https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R)
 * [LASS - How to get data log from server](https://lass.hackpad.com/How-to-get-data-log-from-server-Ztu9mpUsGL9)
 
-## 【 Firmware and Software 】
+## 【 Firmware 】
  * Linkit Smart 7688
    *  [Firmware](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/sdt_intro/index.gsp)
 
