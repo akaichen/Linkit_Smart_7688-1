@@ -2,18 +2,11 @@
 # Version:     2016.09.06
 # Author:      Archer Huang
 # License:     MIT
-# Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + MCS
+# Description: Get Data From MCS
 # *********************************************************************
 # 
-# 1. update opkg & install wget & disable bridge
-# 	 opkg update
-# 	 opkg install wget
-# 	 uci set yunbridge.config.disabled=0
-# 	 uci commit
-#
-# 2. install httplib
+# 1. install paho-mqtt
 #	 pip install paho-mqtt
-#
 # *********************************************************************
 
 import paho.mqtt.client as mqtt
@@ -23,8 +16,8 @@ import socket
 import sys
 import time
 
-deviceId = "D7fDOASh"
-deviceKey = "eqGDzbxWsKyJqkl7"
+deviceId = "DBKHFNIw"
+deviceKey = "8fszdReA51m0vRjq"
 MQTT_SERVER = "mqtt.mcs.mediatek.com"
 MQTT_PORT = 1883
 MQTT_ALIVE = 60
