@@ -19,31 +19,30 @@
 
 ## 【 檔案說明 】
 
-| 資料夾 |  檔案名稱 | 說明  |
-|---|---|---|
-| /Basic  |  /ApMode_StationMode/apModeToStationMode.sh | 將 AP Mode 轉 Station Mode  |
-| /Basic  |  /ApMode_StationMode/stationModeToApMode.sh | 將 Station Mode 轉 AP Mode  |
-| /Basic  | /Get_MacAddress/Arduino/sketch_get_macAddress.ino  | 透過 WI-WI 按鈕取得 IP 或 Mac Address  |
-| /IoT Cloud  |  /Arduino/getDHT/getDHT.ino | 取得 DHT 資料  |
-| /IoT Cloud  |  /Arduino/DHT_OLED/DHT_OLED.ino |  將 DHT 資料顯示於 OLED |
-| /IoT Cloud  |  /Arduino/getDUST/getDUST.ino |  取得 DUST 資料 |
-| /IoT Cloud  |  /Arduino/DHT_DUST_OLED/DHT_DUST_OLED.ino |  將 DHT 與 DUST 資料顯示於 OLED |
-| /IoT Cloud  |  /Arduino/getDHT_Bridge/getDHT_Bridge.ino |  將 DHT 的資料傳送到 MPU |
-| /IoT Cloud  |  /Python/getSensorData.py | 從 MCU 取得 Sensor Data |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_MCS_MQTT.py | 將  Sensor Data 透過 MQTT 傳送到 MCS |
-| /IoT Cloud  |  /Python/get_data_from_mcs_mqtt.py | 從 MCS 取得  Sensor Data |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_MCS.py | 將  Sensor Data 透過 API 傳送到 MCS |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_Thingspeak.py | 將  Sensor Data 傳送到 ThingSpeak |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_LASS.py | 將  Sensor Data 傳送到 LASS |
-| /IoT Cloud  |  /Python/lass_to_thingspeak.py | 將 LASS 的資料傳送到 ThingSpeak |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_AWS_IoT.py | 將 Sensor Data 傳送到  AWS IoT |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_WoTCity.py | 將  Sensor Data 傳送到   WoT.City |
-| /IoT Cloud  |  /Python/get_data_from_wot.py | 從 WoT.City 取得資料 |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_IBM_Bluemix_Publish.py | 將  Sensor Data 傳送到  IBM Bluemix |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_IBM_Bluemix_Subscribe.py | 從 IBM Bluemix 取得資料 |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_Firebase.py | 將  Sensor Data 傳送到 Google Firebase |
-| /IoT Cloud  |  /Python/linkit_Smart_7688_sendVideoStreamToMCS.py | 將影像串流傳送到 MCS |
-
+| 編號 | 資料夾 |  檔案名稱 | 說明  |
+|---|---|---|---|
+|1| /Basic  |  /ApMode_StationMode/apModeToStationMode.sh | 將 AP Mode 轉 Station Mode  |
+|2| /Basic  |  /ApMode_StationMode/stationModeToApMode.sh | 將 Station Mode 轉 AP Mode  |
+|3| /Basic  | /Get_MacAddress/Arduino/sketch_get_macAddress.ino  | 透過 WI-WI 按鈕取得 IP 或 Mac Address  |
+|4| /IoT Cloud  |  /Arduino/getDHT/getDHT.ino | 取得 DHT 資料  |
+|5| /IoT Cloud  |  /Arduino/DHT_OLED/DHT_OLED.ino |  將 DHT 資料顯示於 OLED |
+|6| /IoT Cloud  |  /Arduino/getDUST/getDUST.ino |  取得 DUST 資料 |
+|7| /IoT Cloud  |  /Arduino/DHT_DUST_OLED/DHT_DUST_OLED.ino |  將 DHT 與 DUST 資料顯示於 OLED |
+|8| /IoT Cloud  |  /Arduino/getDHT_Bridge/getDHT_Bridge.ino |  將 DHT 的資料傳送到 MPU |
+|9| /IoT Cloud  |  /Python/getSensorData.py | 從 MCU 取得 Sensor Data |
+|10| /IoT Cloud  |  /Python/linkit_Smart_7688_MCS_MQTT.py | 將  Sensor Data 透過 MQTT 傳送到 MCS |
+|11| /IoT Cloud  |  /Python/get_data_from_mcs_mqtt.py | 從 MCS 取得  Sensor Data |
+|12| /IoT Cloud  |  /Python/linkit_Smart_7688_MCS.py | 將  Sensor Data 透過 API 傳送到 MCS |
+|13| /IoT Cloud  |  /Python/linkit_Smart_7688_Thingspeak.py | 將  Sensor Data 傳送到 ThingSpeak |
+|14| /IoT Cloud  |  /Python/linkit_Smart_7688_LASS.py | 將  Sensor Data 傳送到 LASS |
+|15| /IoT Cloud  |  /Python/lass_to_thingspeak.py | 將 LASS 的資料傳送到 ThingSpeak |
+|16| /IoT Cloud  |  /Python/linkit_Smart_7688_AWS_IoT.py | 將 Sensor Data 傳送到  AWS IoT |
+|17| /IoT Cloud  |  /Python/linkit_Smart_7688_WoTCity.py | 將  Sensor Data 傳送到   WoT.City |
+|18| /IoT Cloud  |  /Python/get_data_from_wot.py | 從 WoT.City 取得資料 |
+|19| /IoT Cloud  |  /Python/linkit_Smart_7688_IBM_Bluemix_Publish.py | 將  Sensor Data 傳送到  IBM Bluemix |
+|20| /IoT Cloud  |  /Python/linkit_Smart_7688_IBM_Bluemix_Subscribe.py | 從 IBM Bluemix 取得資料 |
+|21| /IoT Cloud  |  /Python/linkit_Smart_7688_Firebase.py | 將  Sensor Data 傳送到 Google Firebase |
+|22| /IoT Cloud  |  /Python/linkit_Smart_7688_sendVideoStreamToMCS.py | 將影像串流傳送到 MCS |
 
 ## 【 Board and Sensor 】
 
