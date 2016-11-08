@@ -17,6 +17,19 @@
 * 實作架構
 ![Imgur](http://i.imgur.com/WFNcC1p.png)
 
+## 【 檔案說明 】
+
+| 資料夾 |  檔案名稱 | 說明  |
+|---|---|---|
+| /Basic  |  /ApMode_StationMode/apModeToStationMode.sh | 將 AP Mode 轉 Station Mode  |
+| /Basic  |  /ApMode_StationMode/stationModeToApMode.sh | 將 Station Mode 轉 AP Mode  |
+| /Basic  | /Get_MacAddress/Arduino/sketch_get_macAddress.ino  | 透過 WI-WI 按鈕取得 IP 或 Mac Address  |
+| /IoT Cloud  |  /Arduino/getDHT/getDHT.ino | 取得 DHT 資料  |
+| /IoT Cloud  |  /Arduino/DHT_OLED/DHT_OLED.ino |  將 DHT 資料顯示於 OLED |
+| /IoT Cloud  |  /Arduino/getDUST/getDUST.ino |  取得 DUST 資料 |
+| /IoT Cloud  |  /Arduino/DHT_DUST_OLED/DHT_DUST_OLED.ino |  將 DHT 與 DUST 資料顯示於 OLED |
+| /IoT Cloud  |  /Arduino/getDHT_Bridge/getDHT_Bridge.ino |  將 DHT 的資料傳送到 MPU |
+
 ## 【 Board and Sensor 】
 
 * [LinkIt Smart 7688 Duo](https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html)
