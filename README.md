@@ -23,7 +23,7 @@
 |---|---|---|---|
 |1| /Basic  |  /ApMode_StationMode/apModeToStationMode.sh | 將 AP Mode 轉 Station Mode  |
 |2| /Basic  |  /ApMode_StationMode/stationModeToApMode.sh | 將 Station Mode 轉 AP Mode  |
-|3| /Basic  | /Get_MacAddress/Arduino/sketch_get_macAddress.ino  | 透過 WI-WI 按鈕取得 IP 或 Mac Address  |
+|3| /Basic  | /Get_MacAddress/Arduino/sketch_get_macAddress.ino  | 透過 Wi-Fi 按鈕取得 IP 或 Mac Address  |
 |4| /IoT Cloud  |  /Arduino/getDHT/getDHT.ino | 取得 DHT 資料  |
 |5| /IoT Cloud  |  /Arduino/DHT_OLED/DHT_OLED.ino |  將 DHT 資料顯示於 OLED |
 |6| /IoT Cloud  |  /Arduino/getDUST/getDUST.ino |  取得 DUST 資料 |
