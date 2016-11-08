@@ -106,8 +106,8 @@
         * ```opkg install openssh-sftp-server```   
  * macOS 作業系統
    *  登入 / 傳送檔案（本地端到 Linkit Smart 7688 端）- 終端機
-      * 登入（在本地端電腦的終端機執行） ➙ ```ssh root@IP```
-      * 傳送檔案（在本地端電腦的終端機執行） ➙ ```scp 在電腦中的檔案位置 root@IP:要傳送到 Linkit Smart 7688 中的位置```
+      * 登入（在本地端電腦的終端機執行） ➙ ```ssh root@Linkit Smart 7688 的IP```
+      * 傳送檔案（在本地端電腦的終端機執行） ➙ ```scp 在電腦中的檔案位置 root@Linkit Smart 7688 的IP:要傳送到 Linkit Smart 7688 中的位置```
 
 ## 【 JSON Tools 】
  * [JSON Lint](http://jsonlint.com/)
