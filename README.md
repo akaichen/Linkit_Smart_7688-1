@@ -39,7 +39,7 @@
 
 * DHT
    *  草稿碼 ➙ 匯入程式庫 ➙ 管理程式庫 ➙ 右上角搜尋欄位輸入 DHT ➙ 選擇 DHT sensor library by Adafruit
-* [Seeed OLED Display 128*64 library](https://github.com/Seeed-Studio/OLED_Display_128X64)
+* Seeed OLED Display 128*64 library
    *  到 [Seeed OLED library Github](https://github.com/Seeed-Studio/OLED_Display_128X64) 頁面中的右上角下載整個 ZIP 檔
    *  草稿碼 ➙ 匯入程式庫 ➙ 加入 .ZIP 程式庫  ➙ 選擇上一步驟所下載的 ZIP 檔
       
