@@ -42,7 +42,6 @@
 |19| /IoT Cloud  |  /Python/linkit_Smart_7688_IBM_Bluemix_Publish.py | 將  Sensor Data 傳送到  IBM Bluemix |
 |20| /IoT Cloud  |  /Python/linkit_Smart_7688_IBM_Bluemix_Subscribe.py | 從 IBM Bluemix 取得資料 |
 |21| /IoT Cloud  |  /Python/linkit_Smart_7688_Firebase.py | 將  Sensor Data 傳送到 Google Firebase |
-|22| /IoT Cloud  |  /Python/linkit_Smart_7688_sendVideoStreamToMCS.py | 將影像串流傳送到 MCS |
 
 ## 【 Board and Sensor 】
 
