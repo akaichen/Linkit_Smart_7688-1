@@ -5,15 +5,13 @@
 # Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + LASS
 # *********************************************************************
 # 
-# 1. update opkg & install wget & disable bridge
+# 1. update opkg & disable bridge
 # 	 opkg update
-# 	 opkg install wget
 # 	 uci set yunbridge.config.disabled=0
 # 	 uci commit
 #
 # 2. install mqtt & httplib
 #	 pip install paho-mqtt
-#    pip install httplib2
 #
 # *********************************************************************
 
@@ -44,6 +42,9 @@ MQTT_TOPIC = "DeveloperTest"
 
 # *********************************************************************
 # Data Format
+# https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R
+#
+# Dashboard
 # http://nrl.iis.sinica.edu.tw/LASS/show.php?device_id=Temperature_1024
 
 ver_format=3
