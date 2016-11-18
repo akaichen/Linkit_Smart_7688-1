@@ -5,26 +5,18 @@
 # Description: Linkit Smart 7688 Duo + Arduino Code + Bridge + Thingspeak
 # **************************************************************************************************************************
 # 
-# 1. update opkg & install wget & disable bridge
+# 1. update opkg & disable bridge
 # 	 opkg update
-# 	 opkg install wget
 # 	 uci set yunbridge.config.disabled=0
 # 	 uci commit
 #
 # 2. install mqtt & httplib
-#	 pip install paho-mqtt
 #    pip install httplib2
 #
 # **************************************************************************************************************************
 
 import time
 import sys  
-import websocket
-import socket
-import datetime
-import paho.mqtt.client as paho
-import ssl
-import os
 import httplib, urllib
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge/') 
@@ -42,7 +34,7 @@ value = bridgeclient()
 # https://thingspeak.com/apps/plugins/141502
 # **************************************************************************************************************************
 
-ApiKey = "USZBM6T6PGBF7SO6"
+ApiKey = "SXGI1HG16NIQVBIK"
 
 def post_to_thingspeak(payload):
     headers = {"Content-type": "application/x-www-form-urlencoded","Accept": "text/plain"}
