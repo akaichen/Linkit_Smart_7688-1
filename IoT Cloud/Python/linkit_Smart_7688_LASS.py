@@ -17,13 +17,8 @@
 
 import time
 import sys  
-import websocket
-import socket
-import datetime
 import paho.mqtt.client as mqtt
-import ssl
 import os
-import httplib, urllib
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge/') 
 from bridgeclient import BridgeClient as bridgeclient
