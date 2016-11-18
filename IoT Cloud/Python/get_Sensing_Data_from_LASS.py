@@ -1,9 +1,6 @@
 import paho.mqtt.client as mqtt
 import re
-import httplib, urllib
-import socket
 import sys
-import time
 
 # *********************************************************************
 MQTT_SERVER = "gpssensor.ddns.net"
@@ -13,7 +10,6 @@ MQTT_ALIVE = 60
 MQTT_TOPIC = "DeveloperTest"
 
 LASS_DEVICE_ID="Archer_Temp_Humi_Dust"
-ThingSpeak_API_Key = "9ND1FVDPKLQGPDRI"
 # *********************************************************************
 
 # The callback for when the client receives a CONNACK response from the server.
