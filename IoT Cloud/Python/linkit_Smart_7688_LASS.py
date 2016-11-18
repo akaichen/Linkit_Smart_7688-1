@@ -43,9 +43,6 @@ MQTT_TOPIC = "DeveloperTest"
 # *********************************************************************
 # Data Format
 # https://lass.hackpad.com/LASS-Data-specification-1dYpwINtH8R
-#
-# Dashboard
-# http://nrl.iis.sinica.edu.tw/LASS/show.php?device_id=Temperature_1024
 
 ver_format=3
 fmt_opt=1
