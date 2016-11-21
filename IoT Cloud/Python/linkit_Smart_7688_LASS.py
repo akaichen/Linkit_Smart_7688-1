@@ -32,8 +32,9 @@ MQTT_SERVER = "gpssensor.ddns.net"
 MQTT_PORT = 1883
 MQTT_ALIVE = 60
 #MQTT_TOPIC = "LASS/Test/PM25"
-MQTT_TOPIC = "DeveloperTest"
+#MQTT_TOPIC = "DeveloperTest"
 #MQTT_TOPIC = "LASS/Test/#"
+MQTT_TOPIC = "LASS/Test/#"
 
 # *********************************************************************
 # Data Format
@@ -76,4 +77,4 @@ while True:
     print "packstr_sensor: " + packstr_sensor
 
     mqtt_client.publish(MQTT_TOPIC, payload, qos=1)
-    time.sleep(1)
+    time.sleep(10)

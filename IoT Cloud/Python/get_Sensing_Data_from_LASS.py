@@ -7,7 +7,8 @@ MQTT_SERVER = "gpssensor.ddns.net"
 MQTT_PORT = 1883
 MQTT_ALIVE = 60
 #MQTT_TOPIC = "LASS/Test/PM25"
-MQTT_TOPIC = "DeveloperTest"
+#MQTT_TOPIC = "DeveloperTest"
+MQTT_TOPIC = "LASS/Test/#"
 
 LASS_DEVICE_ID="Archer_Temp_Humi_Dust"
 # *********************************************************************
@@ -22,7 +23,7 @@ def on_connect(client, userdata, flags, rc):
 
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
-    print("mqtt payload=%s" %(msg.payload))
+    #print("mqtt payload=%s" %(msg.payload))
     items = re.split('\|',str(msg.payload))
     for item in items:
     	#print "item: " + item
@@ -43,12 +44,14 @@ def on_message(client, userdata, msg):
             value_humidity = pairs[1]
 
     try:
+        print "value_devId:" + value_devId
+        print "LASS_DEVICE_ID:" + LASS_DEVICE_ID
         if (value_devId == LASS_DEVICE_ID):
             params = urllib.urlencode({'field1': value_dust, 'field2': value_temperature, 'field3': value_humidity, 'key': ThingSpeak_API_Key})
             print "params: " + params
             post_to_thingspeak(params)
     except:
-         return
+        return
          
 mqtt_client = mqtt.Client()
 mqtt_client.on_connect = on_connect
