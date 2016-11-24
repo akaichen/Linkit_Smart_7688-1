@@ -33,7 +33,7 @@ MQTT_SERVER = "mqtt.mcs.mediatek.com"
 MQTT_PORT = 1883
 MQTT_ALIVE = 60
 MQTT_TOPIC1 = "mcs/" + deviceId + "/" + deviceKey + "/" + dataChnId1
-MQTT_TOPIC1 = "mcs/" + deviceId + "/" + deviceKey + "/" + dataChnId2
+MQTT_TOPIC2 = "mcs/" + deviceId + "/" + deviceKey + "/" + dataChnId2
 
 # *********************************************************************
 
@@ -48,5 +48,5 @@ while True:
     mqtt_client.publish(MQTT_TOPIC1, json.dumps(payload), qos=1)
     payload = {"dataChnId":dataChnId2,"value":h0}
     print dataChnId2 + " : " + h0
-    mqtt_client.publish(MQTT_TOPIC1, json.dumps(payload), qos=1)
+    mqtt_client.publish(MQTT_TOPIC2, json.dumps(payload), qos=1)
     time.sleep(1)
