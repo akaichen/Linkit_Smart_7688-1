@@ -47,9 +47,7 @@ def on_message(client, userdata, msg):
         print "value_devId:" + value_devId
         print "LASS_DEVICE_ID:" + LASS_DEVICE_ID
         if (value_devId == LASS_DEVICE_ID):
-            params = urllib.urlencode({'field1': value_dust, 'field2': value_temperature, 'field3': value_humidity, 'key': ThingSpeak_API_Key})
-            print "params: " + params
-            post_to_thingspeak(params)
+            print("mqtt payload=%s" %(msg.payload))
     except:
         return
          

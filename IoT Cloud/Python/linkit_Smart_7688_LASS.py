@@ -34,7 +34,7 @@ MQTT_ALIVE = 60
 #MQTT_TOPIC = "LASS/Test/PM25"
 #MQTT_TOPIC = "DeveloperTest"
 #MQTT_TOPIC = "LASS/Test/#"
-MQTT_TOPIC = "LASS/Test/#"
+MQTT_TOPIC = "LASS/Test/PM25"
 
 # *********************************************************************
 # Data Format
