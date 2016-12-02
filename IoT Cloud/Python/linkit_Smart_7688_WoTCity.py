@@ -27,7 +27,7 @@
 #	 python setup.py install
 # 
 # Dashboard
-# 	http://52.42.77.220/dashboard2/index.html#57615d8a54242e1f2a000ee5
+# 	http://52.42.77.220/dashboard/index.html#57615d8a54242e1f2a000ee5
 # **************************************************************************************************************************
 
 import time
