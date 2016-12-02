@@ -37,25 +37,20 @@ import datetime
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge/') 
 from bridgeclient import BridgeClient as bridgeclient
-
 value = bridgeclient()
 
 websocket.enableTrace(True)
-ws = websocket.create_connection("ws://wot.city/object/57615d8a54242e1f2a000ee5/send")
+ws = websocket.create_connection("ws://wot.city/object/584132afe8dfd8d226000365/send")
 
 while True:
-	d0 = value.get("d")
 	h0 = value.get("h")
 	t0 = value.get("t")
-	print "Dust: " + d0
 	print "Humi: " + h0
 	print "Temp: " + t0
 	
 	t = time.time();
 	date = datetime.datetime.fromtimestamp(t).strftime('%Y%m%d%H%M%S')
-	
 	vals = "{\"date\":\""+date+"\",\"temperature\":"+t0+",\"h\":"+h0+",\"soil\":"+d0+"}"
-	
 	time.sleep(1);
 	ws.send(vals);
 	print vals;
