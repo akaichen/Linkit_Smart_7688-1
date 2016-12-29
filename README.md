@@ -51,6 +51,9 @@
 * [Grove - Dust Sensor](https://www.seeedstudio.com/Grove-Dust-Sensor-p-1050.html)
 * [Grove - OLED Display 1.12"](https://www.seeedstudio.com/Grove-OLED-Display-1.12%22-p-824.html)
 
+## 【 Pin-out Diagram 】
+[Imgur](http://i.imgur.com/3fXpr8O.png)
+
 ## 【 Integrated Development Environment - IDE 】
  
  * Arduino
