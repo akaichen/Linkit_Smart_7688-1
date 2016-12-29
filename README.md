@@ -84,4 +84,6 @@
 
 ## 【 Reference 】
 
-* [MediaTek LinkIt™ Smart 7688](https://docs.labs.mediatek.com/resource/linkit-smart-7688/en/get-started)
+* [Get Started with the LinkIt Smart 7688](https://docs.labs.mediatek.com/resource/linkit-smart-7688/en/get-started/get-started-with-the-linkit-smart-7688-development-board)
+* [Get Started with the LinkIt Smart 7688 Duo](https://docs.labs.mediatek.com/resource/linkit-smart-7688/en/get-started/get-started-with-the-linkit-smart-7688-duo-development-board)
+* [LinkIt Smart 7688 Developer’s Guide](https://labs.mediatek.com/en/download/ih80Qtjo)
