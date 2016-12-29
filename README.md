@@ -61,6 +61,9 @@
    * [Jupyter](http://jupyter.org/)
      * Command: ipython notebook
 
+## 【 Firmware 】
+* [Download](https://docs.labs.mediatek.com/resource/linkit-smart-7688/en/downloads)
+
 ## 【 Library 】
 
 * DHT
@@ -81,4 +84,4 @@
 
 ## 【 Reference 】
 
-* [MediaTek LinkIt™ Smart 7688](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis
+* [MediaTek LinkIt™ Smart 7688](https://docs.labs.mediatek.com/resource/linkit-smart-7688/en/get-started)
