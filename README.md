@@ -13,7 +13,7 @@
 | HTTP | ThingSpeak、MediaTek Cloud Sandbox (MCS)、Google Firebase |
 | MQTT | ThingSpeak、LASS、MediaTek Cloud Sandbox (MCS)、AWS IoT、IBM Bluemix IoT Platform |
 | WebSocket | WoT.City |
-   
+        
 * 實作架構  
 ![Imgur](http://i.imgur.com/WFNcC1p.png)
 
