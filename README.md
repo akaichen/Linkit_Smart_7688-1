@@ -18,7 +18,7 @@
 ![Imgur](http://i.imgur.com/WFNcC1p.png)
 
 ## 【 檔案說明 】
-
+      
 | 編號 | 資料夾 |  檔案名稱 | 說明  |
 |---|---|---|---|
 |1| /Basic  |  /ApMode_StationMode/apModeToStationMode.sh | 將 AP Mode 轉 Station Mode  |
